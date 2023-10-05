@@ -1,0 +1,23 @@
+<aside class="main-sidebar">
+
+    <section clas="sidebar">
+        <ul class="sidebar-menu">
+
+            <li>
+                <a href="">
+                    <i class='fa fa-home'></i>
+                    <span> Registrar solicitud</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="">
+                    <i class="fa fa-medkit"></i>
+                    <span> Historial de solicitudes</span>
+                </a>
+            </li>
+
+        </ul>
+    </section>
+
+</aside>
