@@ -51,9 +51,9 @@
  
     @if(Auth::user())      
 
-            <header class="main-header">
+            <header class="main-header" >
                 <!-- Logo -->
-                <a href="" class="logo">
+                <a href="" class="logo" style="background-color: #540909;">
 
                     <!-- mini logo for sidebar mini 50x50 pixels-->
                     <span class="logo-mini">GS</span>
@@ -65,7 +65,7 @@
 
                 <!-- Header Navbar: style can be found in header.less -->
 
-                <nav class="navbar navbar-static-top">
+                <nav class="navbar navbar-static-top" style="background-color: #6b0705;">
                     
                     <!-- Sidebar toggle button-->
                     {{-- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -87,7 +87,7 @@
                                 
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                     
-                                    <span class="hidden-xs"> {{ auth()-> user() -> name}}</span>
+                                    <span class="hidden-xs" > {{ auth()-> user() -> name}}</span>
 
                                 </a>
                                 
@@ -115,8 +115,7 @@
                                     </div>
 
                                     <div class="pull-right">
-                                        <a href="{{route('logout')}}" onclick="event.preventDefault(); 
-                                        document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Salir</a>
+                                        <a href="" class="btn btn-default btn-flat">Salir</a>
                                     </div>
 
                                 </li>

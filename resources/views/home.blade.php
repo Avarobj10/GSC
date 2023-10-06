@@ -4,7 +4,7 @@
 
 
 
-{{-- 
+
 <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
     <a class="dropdown-item" href=""
        onclick="event.preventDefault();
@@ -15,7 +15,7 @@
     <form id="logout-form" action="" method="POST" class="d-none">
         @csrf
     </form>
-</div> --}}
+</div> 
 
 @endsection
 
