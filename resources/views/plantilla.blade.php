@@ -49,11 +49,13 @@
 
 <body class="hold-transition skin-blue sidebar-mini login-page">
  
-    @if(Auth::user())      
+    @if(Auth::user())
+       
+
 
             <header class="main-header" >
                 <!-- Logo -->
-                <a href="" class="logo" style="background-color: #540909;">
+                <a href="" class="logo" style="background-color: #1a1919;">
 
                     <!-- mini logo for sidebar mini 50x50 pixels-->
                     <span class="logo-mini">GS</span>
@@ -65,7 +67,7 @@
 
                 <!-- Header Navbar: style can be found in header.less -->
 
-                <nav class="navbar navbar-static-top" style="background-color: #6b0705;">
+                <nav class="navbar navbar-static-top" style="background-color: #000000;">
                     
                     <!-- Sidebar toggle button-->
                     {{-- <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -115,8 +117,14 @@
                                     </div>
 
                                     <div class="pull-right">
-                                        <a href="" class="btn btn-default btn-flat">Salir</a>
+                                        <a href="{{route('logout')}}" onclick="event.preventDefault();document.getElementById('logout-form').submit();" class="btn btn-default btn-flat">Salir</a>
                                     </div>
+
+                                    <form method="POST" id="logout-form" action="{{route('logout')}}">
+
+                                        @csrf
+
+                                    </form>
 
                                 </li>
 
@@ -134,10 +142,227 @@
             </header>
             
             @yield('contenido_Auth')
-            
-       
 
+        <div class="wrapper"></div> 
+
+            <section class="content">
         
+                <div class="box">
+        
+                    <div class="box-header">
+        
+                        <a href="registroSolicitud">
+        
+                            <button class="btn btn-primary btn-lg">Registrar solicitud</button>
+        
+                        </a>
+                    </div>
+        
+                    <div class="box-body">
+        
+                        <table class="table table-bordered table-hover table-striped dt-responsive">
+                        
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Nombre y Apellido</th>
+                                    <th>Documento</th>
+                                    <th>Email</th>                      
+                                    <th>Teléfono</th>
+                                    <th>Editar / Borrar</th>
+                                </tr>
+                            </thead>
+        
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody>
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+
+                            <tbody>        
+                                                              
+                                <tr>
+    
+                                    <td>001</td>
+                                    <td>Alfonso Ugarte</td>
+                                    <td>72345618</td>
+                                    <td>alfonso@gmail.com</td>
+                                    <td>989456123</td>
+                                    <td>
+                                          
+                                        <button class="btn btn-success"> <i class="fa-pencil"> </i> </button>                                    
+    
+                                        <button class="btn btn-danger" ><i class="fa-trash"> </i> </button>
+    
+                                    </td>
+                                </tr>
+        
+                            </tbody> 
+        
+                        </table> 
+        
+                    </div>
+        
+                </div>
+        
+            </section>
+
+         
+               
     @else
     
         @yield('contenido_notAuth')
